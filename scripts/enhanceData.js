@@ -158,7 +158,7 @@ const getCruiseData = (cruise) => {
 async function main() {
   const newData = [];
   console.log(`Scraping ${sortedCruises.length} cruises…`);
-  for (const i in sortedCruises) {
+  for (let i = 0; i < sortedCruises.length; i++) {
     const cruise = sortedCruises[i];
     const data = await getCruiseData(cruise)
       .catch(err => console.error(err)); // synchronous so it doesn't crash the server
