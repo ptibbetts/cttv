@@ -8,11 +8,13 @@
     "data": "yarn run convertToJson && yarn run enhanceData",
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "now-start": "serve ./dist"
   },
   "dependencies": {
     "axios": "^0.18.0",
     "cheerio": "^1.0.0-rc.2",
+    "serve": "^6.5.1",
     "vue": "^2.5.13"
   },
   "devDependencies": {
