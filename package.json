@@ -1,0 +1,49 @@
+{
+  "name": "vue-cruise.co.uk",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "convertToJson": "node scripts/convertToJson.js",
+    "enhanceData": "node scripts/enhanceData.js",
+    "data": "yarn run convertToJson && yarn run enhanceData",
+    "serve": "vue-cli-service serve --open",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
+    "vue": "^2.5.13"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.0-beta.3",
+    "@vue/cli-plugin-eslint": "^3.0.0-beta.3",
+    "@vue/cli-service": "^3.0.0-beta.3",
+    "request": "^2.83.0",
+    "request-promise-native": "^1.0.5",
+    "vue-template-compiler": "^2.5.13",
+    "xlsx-to-json": "^0.3.0"
+  },
+  "babel": {
+    "presets": [
+      "@vue/app"
+    ]
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ]
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
