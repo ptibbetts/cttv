@@ -4,7 +4,7 @@
       <div class="cruise__header">
         <span class="cruise__name">
           {{ cruise.departure }}
-          <template v-if="cruise.nights">
+          <template v-if="cruise.nights > 0">
             - {{ cruise.nights }} nights
           </template>
           - {{ cruise.shipName }} 
